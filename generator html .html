@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="generator css.css">
+    <title>password generator</title>
+
+    <!-- https://www.w3schools.com/html/html_charset.asp 
+        ref for java letters & numbers -->
+</head>
+<body>
+    
+	<h2>Password Generator</h2>
+
+	<div class="result-container">
+		<span id="result"></span>
+		<button class="btn" id="clipboard">
+			<i class="far fa-clipboard"></i>
+		</button>
+	</div>
+
+	<section class="settings">
+
+		<div class="setting">
+            <label>Password length</label>
+			<input type="number" id="length" min='4' max='20' value='20' />
+		</div>
+
+		<div class="setting">
+			<label>Include uppercase letters</label>
+			<input type="checkbox" id="uppercase" checked />
+		</div>
+
+		<div class="setting">
+			<label>Include lowercase letters</label>
+			<input type="checkbox" id="lowercase" checked />
+		</div>
+
+		<div class="setting">
+			<label>Include numbers</label>
+			<input type="checkbox" id="numbers" checked />
+		</div>
+
+		<div class="setting">
+			<label>Include symbols</label>
+			<input type="checkbox" id="symbols" checked />
+		</div>
+
+	</section>
+
+	<button class="btn btn-large" id="generate">
+		Generate password
+	</button>
+	
+</div>
+<footer>
+    
+
+<h5>created by Ian Shaw</h5>
+
+</footer> 
+<script src="generator javascript.js"></script>
+</html>
