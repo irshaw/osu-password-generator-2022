@@ -1,0 +1,1 @@
+# osu-password-generator-2022
